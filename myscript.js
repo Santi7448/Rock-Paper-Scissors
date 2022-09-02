@@ -4,8 +4,6 @@ let playerScore = 0;
 let computerScore = 0;
   
 
-
-
   let arr = ["Rock", "Paper", "Scissors"];
 
   
@@ -72,25 +70,18 @@ const score_view2 = document.querySelector(".display-score2");
       result_div.innerHTML = "scissors and scissors! its a tie!";
     } displayScore(0)
     
-
   }
-
-  
-  
 
   function displayScore(input) {
     
-
     if (input === 1) {
       playerScore++;
       
     }
     
-
     else if (input === 2) {
       computerScore++
 
-     
     }
     score_view.innerHTML = "computer score is  " +  computerScore;
 
@@ -98,35 +89,27 @@ const score_view2 = document.querySelector(".display-score2");
 
     finale(computerScore, playerScore)
     
-
-
 }
 
 function finale(computerScore, playerScore) {
 
   if (computerScore === 5) {
-    console.log("Computer Wins!")
+    alert("Computer Wins!")
+    reset()
   }
 
   else if (playerScore === 5) { 
-    console.log("Player Wins!")
+    alert("Player Wins!")
+    reset()
+  }
+  }
+
+  function reset() {
+    playerScore = 0
+    computerScore = 0
 
   }
 
-    
-  }
-
-
-
-  
-  
-  
-
-  
-
-
-  
-  
 
 
    const rockbtn = document.querySelector('#rock');
