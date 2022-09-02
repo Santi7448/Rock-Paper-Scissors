@@ -1,6 +1,7 @@
 body {
 background-image: url(envelope.jpg);
 background-size: cover;
+font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -15,15 +16,21 @@ background-size: cover;
 .score-board {
   height : 75px;
   font-size: 45px;
+  margin-bottom: 40px;
  }
 
 .scores {
-  margin-top: 40px;
+  margin-top: 55px;
   font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  
 }
 
 .choices {
-  margin-top: 60px;
+  margin-top: 70px;
   display: flex;
   gap: 20px;
   
@@ -32,16 +39,19 @@ background-size: cover;
 #rock {
   font-size: 40px;
   border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #paper {
   font-size: 40px;
   border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #scissors {
   font-size: 40px;
   border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
