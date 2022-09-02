@@ -12,17 +12,37 @@ background-size: cover;
   flex-direction: column;
 }
 
+.score-board {
+  height : 75px;
+  font-size: 45px;
+ }
+
 .scores {
   margin-top: 40px;
 }
 
 .choices {
   margin-top: 60px;
+  display: flex;
+  gap: 20px;
+  
+}
+
+#rock {
+  font-size: 40px;
+  border-radius: 10px;
+}
+
+#paper {
+  font-size: 40px;
+  border-radius: 10px;
+}
+
+#scissors {
+  font-size: 40px;
+  border-radius: 10px;
 }
 
 
-.score-board {
- height : 75px;
- font-size: 45px;
-}
+
 
