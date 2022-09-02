@@ -3,127 +3,27 @@
   <head>
     <meta charset="utf-8">
 
+    <link rel="stylesheet" href="style.css">
+
     
   </head>
 
-  
+  <body>
 
-<script>
+    <div class="score-board">lmao</div>
 
-let playerSelection;
-let computerSelection;
-  
+    <div class="display-score">yoo</div>
 
+    <div class="display-score2">amma</div>
 
-function game(numOfRounds) { 
-  
-    do { let roundScore = playRound(playerSelection, computerSelection);
-      
-      if (roundScore !== 0){
-        numOfRounds--;
-  
-      }
+    <button id='rock'>Rock</button>
+    <button id='paper'>Paper</button>
+    <button id='scissors'>Scissors</button>
 
-    } while (numOfRounds > 0);
-  }
-
-  let arr = ["Rock", "Paper", "Scissors"];
-
-  
- function computerPlay() { let randomPlay = Math.floor(Math.random() * arr.length);
-
-    let item = arr[randomPlay];
-
-    return item;
- }
-
+    <script src="myscript.js"></script>
+  </body>
 
   
 
-   
-
-
-
-function gamePrompt() {
   
-
-  let hand = window.prompt("choose your hand").toLowerCase();
-
-  if (hand === "rock" || hand === "paper" || hand === "scissors") {
-    console.log("player has chosen..." + hand);
-    return hand;
-  }
-
-}
-
-
- 
-
-  
-  
-
-
-
-  function playRound(playerSelection, computerSelection) {
-    
-    computerSelection = computerPlay();
-    playerSelection = gamePrompt();
-    
-   
-    
-
-    if (playerSelection === "rock" && computerSelection === "Scissors") {
-      console.log( "You Win! Rock beats Scissors");
-      return 1 ;
-    }
-
-    else if (playerSelection === "rock" && computerSelection === "Rock") {
-      console.log("Tie! Rock and Rock");
-      return 0;
-    }
-
-    else if (playerSelection === "rock" && computerSelection === "Paper") {
-      console.log("You lose! Paper beats rock!");
-      return 2;
-    }
-
-    else if (playerSelection === "paper" && computerSelection === "Rock") {
-      console.log("you win!, paper beats rock!");
-      return 1;
-    }
-
-    else if (playerSelection === "paper" && computerSelection === "Paper") {
-      console.log("Tie! Paper and Paper");
-      return 0;
-    }
-
-    else if (playerSelection === "paper" && computerSelection === "Scissors") {
-      console.log("You lose! Scissor cuts paper!");
-      return 2;
-    }
-
-    else if (playerSelection === "scissors" && computerSelection === "Paper") {
-      console.log("You Win! Scissors cut hella paper!");
-      return 1;
-    }
-
-    else if (playerSelection === "scissors" && computerSelection === "Rock") {
-      console.log("You lose! Rock destroys scissor!");
-      return 2;
-    }
-
-    else if (playerSelection === "scissors" && computerSelection === "Scissors") {
-      console.log("A tie! Scissors and Scissors!");
-    } return 0;
-    
-
-  }
-
- 
-game(3)
-
-
-
-  
-</script>
 </html>

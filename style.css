@@ -1,0 +1,10 @@
+body {
+background-image: url(envelope.jpg);
+background-size: cover;
+
+}
+
+
+.score-board {
+ height : 75px;
+}
