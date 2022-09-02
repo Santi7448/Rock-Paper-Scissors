@@ -5,21 +5,6 @@ let computerScore = 0;
   
 
 
-function game(numOfRounds) { 
-  
-    let roundScore = playRound(playerSelection, computerSelection);
-      
-      if (roundScore !== 0){
-        numOfRounds--;
-  
-      }
-
-      else if (numOfRounds === 0) {
-        alert("game over");
-      }
-
-    
-  }
 
   let arr = ["Rock", "Paper", "Scissors"];
 
@@ -117,6 +102,20 @@ const score_view2 = document.querySelector(".display-score2");
     score_view2.innerHTML = "player score is  " + playerScore;
     
   }
+
+
+  function game(numOfRounds) { 
+  
+    let roundScore = playRound(playerSelection, computerSelection);
+      
+      if (roundScore !== 0){
+        numOfRounds--;
+  
+      }
+
+      else if (numOfRounds === 0) {
+        alert("game over");
+      }
   
 
 
