@@ -31,32 +31,25 @@ const score_view2 = document.querySelector(".display-score2");
     if (playerSelection === "rock" && computerSelection === "Scissors") {
       result_div.innerHTML = "rock beats Scissors!! you win!";
       displayScore(1);
-      
-    
     }
 
     else if (playerSelection === "rock" && computerSelection === "Rock") {
       result_div.innerHTML = "Rock and rock! its a tie!";
       displayScore(0)
-     
-      
     }
 
     else if (playerSelection === "rock" && computerSelection === "Paper") {
       result_div.innerHTML = "you lose! paper beats rock!";
-      
-      displayScore(2)
+      displayScore(2) 
     }
 
     else if (playerSelection === "paper" && computerSelection === "Rock") {
       result_div.innerHTML = " you win! Paper beats rock!";
-      
       displayScore(1)
     }
 
     else if (playerSelection === "paper" && computerSelection === "Paper") {
       result_div.innerHTML = "its a tie! paper and paper!";
-  
       displayScore(0)
     }
 
@@ -81,12 +74,13 @@ const score_view2 = document.querySelector(".display-score2");
     
 
   }
+
+  
   
 
   function displayScore(input) {
     
-     
-    
+
     if (input === 1) {
       playerScore++;
       
@@ -95,27 +89,43 @@ const score_view2 = document.querySelector(".display-score2");
 
     else if (input === 2) {
       computerScore++
+
      
     }
     score_view.innerHTML = "computer score is  " +  computerScore;
 
     score_view2.innerHTML = "player score is  " + playerScore;
+
+    finale(computerScore, playerScore)
+    
+
+
+}
+
+function finale(computerScore, playerScore) {
+
+  if (computerScore === 5) {
+    console.log("Computer Wins!")
+  }
+
+  else if (playerScore === 5) { 
+    console.log("Player Wins!")
+
+  }
+
     
   }
 
 
-  function game(numOfRounds) { 
-  
-    let roundScore = playRound(playerSelection, computerSelection);
-      
-      if (roundScore !== 0){
-        numOfRounds--;
-  
-      }
 
-      else if (numOfRounds === 0) {
-        alert("game over");
-      }
+  
+  
+  
+
+  
+
+
+  
   
 
 
@@ -131,8 +141,3 @@ scissorsbtn.addEventListener('click', function(){playRound("scissors"); });
 
 
 
-
-
- 
-
- 
