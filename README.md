@@ -1,2 +1,2 @@
 # Rock-Paper-Scissors
-project
+Simple rock paper scissors game.
